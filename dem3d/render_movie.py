@@ -9,9 +9,8 @@ PARENT_PATH = str(Path(bpy.data.filepath).parent.parent.resolve())
 if PARENT_PATH not in sys.path:
     sys.path.append(PARENT_PATH)
 
-from cli_utils import ArgumentParserForBlender  # noqa: E402, E0401
-
-from dem3d import make_dem_with_texture  # noqa: E402, E0401, E0611
+from dem3d.cli_utils import ArgumentParserForBlender  # noqa: E402, E0401
+from dem3d.dem3d import make_dem_with_texture  # noqa: E402, E0401, E0611
 
 
 def main(dem_path: Path, raster_path: Path, out_file: Path, pattern: str, fps: int, strength: float):  # noqa: D103

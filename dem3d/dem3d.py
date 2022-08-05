@@ -122,7 +122,7 @@ if __name__ == "__main__":
     if PARENT_PATH not in sys.path:
         sys.path.append(PARENT_PATH)
 
-    from cli_utils import ArgumentParserForBlender  # noqa: E402, E0401
+    from dem3d.cli_utils import ArgumentParserForBlender  # noqa: E402, E0401
 
     parser = ArgumentParserForBlender()
     parser.add_argument("-dem", "--dem_path", type=Path, required=True)
