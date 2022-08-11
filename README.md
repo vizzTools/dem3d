@@ -31,3 +31,4 @@ blender -b -P render_movie.py -- -dem Barcelona/elevation.3857.tif -r Barcelona 
 - [ ] Download and install blenderGIS addon automatically
 - [ ] Export scene as glTF
 - [ ] Animate glTF or discuss with frontend team best way to do this.
+- [ ] Dockerize everything!
