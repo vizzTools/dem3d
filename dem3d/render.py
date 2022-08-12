@@ -5,6 +5,7 @@ import sys
 import bpy  # noqa: E0401
 
 
+# Add current module to path so the Blender interpreter finds it
 PARENT_PATH = str(Path(bpy.data.filepath).parent.parent.resolve())
 if PARENT_PATH not in sys.path:
     sys.path.append(PARENT_PATH)
