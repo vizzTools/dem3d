@@ -20,7 +20,7 @@ Note that (for now) the script must be run from Blender's Python (by using the `
 In order to render a movie use:
 
 ```shell
-blender -b -P render_movie.py -- -dem Barcelona/elevation.3857.tif -r Barcelona -o renders/barcelona.mp4 -p "RGB.*.tif" -fps 4 -s 2.5
+blender -b -P render.py -- -dem Barcelona/elevation.3857.tif -r Barcelona -o renders/barcelona.mp4 -p "RGB.*.tif" -fps 4 -s 2.5
 ```
 ![](https://github.com/vizzTools/dem3d/blob/master/docs/dem3d_example.gif)
 
